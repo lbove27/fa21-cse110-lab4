@@ -9,19 +9,19 @@
 9. At line 11 this function will return an error because we declared i using let inside of the for loop, meaning the rest of the function outside of that loop doesn't have access to i. Its scope runs out before the console.log statement, so there is an undefined variable error. 
 10. At line 12 it will print the length which is 3. It prints 3 because the length is constant and is defined as being the length of the prices array. Since the prices array is made up of three elements, [100, 200, 300], the length is three. Therefore, printing the length returns 3. 
 11. This function will return the correct (intended) array [50, 100, 150] because the function as a whole is correct. Despite the discounted array being declared constant, we can still change and reassign the values inside of the array, just not the entire array. 
-12. A: student.name
-    B: student['Grad Year'] 
-    C: student.greeting();
-    D: student['Favorite Teacher'].name
-    E: student.courseLoad[1] (if you want index one, but student.courseLoad[0] if you want the first item in the array)
-13. A: '3' + 2 = '32' because it sees '3' as a string and + as the concatenate operation, so it parses both as strings. 
-    B: '3' - 2 = 1 because you cannot substract two string values, so it parses them as numbers.
-    C: 3 + null = 3 because null is equivalent to 0 when dealing with numeric conversion and 3 is parsed as a number. 
-    D: '3' + null = 3null because 3 is seen as a string, therefore + is seen as concatenation, and null becomes a string whose contents are 'null' when converted to         a string.
-    E: true + 3 = 4 because true is equivalent to 1 when numeric conversion occurs, and numeric conversion occurs because + is a math operation when not dealing            with strings. 
-    F: false + null = 0 because + is going to cause them to be converted into numbers, and both false and null become 0 after undergoing numeric conversion. 
-    G: '3' + undefined = 3undefined because '3' is seen as a string, so + is concatenate, and undefined just becomes 
+12. - A: student.name
+    - B: student['Grad Year'] 
+    - C: student.greeting();
+    - D: student['Favorite Teacher'].name
+    - E: student.courseLoad[1] (if you want index one, but student.courseLoad[0] if you want the first item in the array)
+13. - A: '3' + 2 = '32' because it sees '3' as a string and + as the concatenate operation, so it parses both as strings. 
+    - B: '3' - 2 = 1 because you cannot substract two string values, so it parses them as numbers.
+    - C: 3 + null = 3 because null is equivalent to 0 when dealing with numeric conversion and 3 is parsed as a number. 
+    - D: '3' + null = 3null because 3 is seen as a string, therefore + is seen as concatenation, and null becomes a string whose contents are 'null' when converted          to a string.
+    - E: true + 3 = 4 because true is equivalent to 1 when numeric conversion occurs, and numeric conversion occurs because + is a math operation when not dealing            with strings. 
+    - F: false + null = 0 because + is going to cause them to be converted into numbers, and both false and null become 0 after undergoing numeric conversion. 
+    - G: '3' + undefined = 3undefined because '3' is seen as a string, so + is concatenate, and undefined just becomes 
     'undefined during string conversion. 
-    H: '3' - undefined = NaN because undefined becomes NaN as a number, and they go through numeric conversion because - is a math operation. 
+    - H: '3' - undefined = NaN because undefined becomes NaN as a number, and they go through numeric conversion because - is a math operation. 
 14. 
 15. 
