@@ -23,5 +23,10 @@
     - G: '3' + undefined = 3undefined because '3' is seen as a string, so + is concatenate, and undefined just becomes 
     'undefined during string conversion. 
     - H: '3' - undefined = NaN because undefined becomes NaN as a number, and they go through numeric conversion because - is a math operation. 
-14. 
-15. 
+14. - A: '2' > 1 will return true because when comparing values of different types, JavaScript converts both values to numbers, meaning '2' will be converted to the       number 2 and it is true that 2 is greater than 1
+    - B: '2' < '12' returns false because JavaScript will compare the character codes for 2 and 1 (first char in 12) and see that 2 is greater than 1, meaning '2'         is greater than '12' 
+    - C: 2 == '2' returns true because the string becomes the number 2, and 2 is equal to 2. 
+    - D: 2 === '2' returns false because === checks without type conversion, meaning if the two things being compared are of different types, it automatically             returns false. 
+    - E: true == 2 returns false because true is equivalent to 1 when it is converted into a number
+    - F: true === Boolean(2) returns true because boolean() will return true for any non-zero number, and since 2 is non-zero, it will return true. Since true ===         true, the expression returns true 
+15. The difference between == and === is that == compares after converting the two things being compared to the same type whereas === checks without converting the     type, meaning that if the types are different, === will always return false (== is an equality check whereas === is a strict equality check). 
